@@ -32,7 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // }
 
-    function copyText() {
+});
+
+
+
+
+function copyText() {
         var copyText = "123";
         
         // Copy the predetermined text to the clipboard
@@ -45,8 +50,3 @@ document.addEventListener("DOMContentLoaded", function () {
         
         alert("Text has been copied!");
       }
-    
-
-
-
-});
