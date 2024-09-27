@@ -308,6 +308,21 @@
 
         <button class="button", onclick="copyText()">Phone</button>
 
+        <script>
+    function myFunction() {
+      // Predetermined text to copy
+      var copyText = "123";
+
+      // Copy the predetermined text to the clipboard
+      navigator.clipboard.writeText(copyText).then(() => {
+        // Alert the copied text
+        alert("Copied the text: " + copyText);
+      }, (err) => {
+        console.error('Could not copy text: ', err);
+      });
+    }
+    </script>
+
 
       </div>
 
