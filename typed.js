@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     new Typed(".typed", options);
 
 
-    // call nav bar when page small 
+    // call nav bar when page small
     const headerToggleBtn = document.querySelector('.header-toggle');
 
     function headerToggle() {
@@ -22,31 +22,21 @@ document.addEventListener("DOMContentLoaded", function () {
         headerToggleBtn.classList.toggle('bi-list');
         headerToggleBtn.classList.toggle('bi-x');
     }
+
     headerToggleBtn.addEventListener('click', headerToggle);
-
-
-    
-    // function paste() {
-
-    //     navigator.clipboard.writeText("(905)-616-3985");
-
-    // }
-
 });
 
-
-
-
 function copyText() {
-        var copyText = "+1 9053927304";
-        
-        // Copy the predetermined text to the clipboard
-        navigator.clipboard.writeText(copyText).then(() => {
+    var copyText = "123";
+
+    // Copy the predetermined text to the clipboard
+    navigator.clipboard.writeText(copyText).then(() => {
         // Alert the copied text
-            alert("Copied the text: " + copyText);
-        }, (err) => {
-            console.error('Could not copy text: ', err);
-        });
-        
-        alert("Text has been copied!");
+        alert("Copied the text: " + copyText);
+    }, (err) => {
+        console.error('Could not copy text: ', err);
+    });
+
+    alert("Text has been copied!");
 }
+
