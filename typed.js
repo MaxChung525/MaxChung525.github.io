@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function copyText() {
-        var copyText = "123";
+        var copyText = "+1 9053927304";
         
         // Copy the predetermined text to the clipboard
         navigator.clipboard.writeText(copyText).then(() => {
@@ -46,7 +46,7 @@ function copyText() {
             alert("Copied the text: " + copyText);
         }, (err) => {
             console.error('Could not copy text: ', err);
-  });
+        });
         
         alert("Text has been copied!");
-      }
+}
