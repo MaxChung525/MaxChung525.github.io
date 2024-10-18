@@ -6,13 +6,20 @@ document.addEventListener("DOMContentLoaded", function () {
     var options = {
         strings: typedItems,
         typeSpeed: 125,
-        backSpeed: 50,
+        backSpeed: 110,
         loop: true,
         cursorChar: "|",
-        autoInsertCss: true
+        autoInsertCss: true,
+        // Add this line to use Typed.js cursor
+        showCursor: true
     };
 
     new Typed(".typed", options);
+
+    // Remove extra cursor elements
+    document.querySelectorAll('.typed-cursor').forEach((cursor, index) => {
+        if (index > 0) cursor.remove();
+    });
 
     // Header toggle functionality
     const headerToggleBtn = document.querySelector('.header-toggle');
@@ -40,3 +47,4 @@ function copyText() {
 
     alert("Text has been copied!");
 }
+
