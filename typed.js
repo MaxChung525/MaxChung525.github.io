@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Typed.js initialization
     var typedElement = document.querySelector(".typed");
     var typedItems = typedElement.getAttribute("data-typed-items").split(", ");
 
@@ -13,8 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     new Typed(".typed", options);
 
-
-    // call nav bar when page small
+    // Header toggle functionality
     const headerToggleBtn = document.querySelector('.header-toggle');
 
     function headerToggle() {
@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     headerToggleBtn.addEventListener('click', headerToggle);
 });
 
+// Keep the copyText function outside if it's used elsewhere
 function copyText() {
     var copyText = "+1 9053927304";
 
@@ -39,4 +40,3 @@ function copyText() {
 
     alert("Text has been copied!");
 }
-
