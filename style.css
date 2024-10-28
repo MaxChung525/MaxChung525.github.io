@@ -761,3 +761,66 @@ footer p{
 
 
 
+
+/*--------------------------------------------------------------
+# Toast Notification
+--------------------------------------------------------------*/
+.custom-toast {
+  position: fixed;
+  top: 25px;
+  right: 30px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 20px 35px 20px 25px;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  z-index: 9999;
+  display: none;
+}
+
+.custom-toast.active {
+  transform: translateX(0%);
+  display: block;
+}
+
+.custom-toast-content {
+  display: flex;
+  align-items: center;
+}
+
+.custom-toast-content i {
+  color: #088544;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.custom-toast .custom-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #ddd;
+}
+
+.custom-toast .custom-progress:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #088544;
+}
+
+.custom-progress.active:before {
+  animation: custom-progress 5s linear forwards;
+}
+
+@keyframes custom-progress {
+  100% {
+    right: 100%;
+  }
+}
