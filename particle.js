@@ -9,14 +9,15 @@ class Paricle {
         this.ctx.fillStyle = color;
         this.vx = 0;
         this.vy = 0;
-        this.ease = 0.2;
+        this.ease = 0.15;
         this.friction = 0.95;
         this.dx = 0;
         this.dy = 0;
         this.distance = 0;
         this.force = 0;
         this.angle = 0;
-        this.size = Math.floor(Math.random() * 5);
+        // this.size = Math.floor(Math.random() * 3);
+        this.size = 2.2;
         this.draw();
     }   
 
@@ -50,9 +51,9 @@ class Effect {
         this.ctx = context;
         this.particleColor = particleColor;
         this.particlesArray = [];
-        this.gap = 20;
+        this.gap = 15;
         this.mouse = {
-            radius: 3000,
+            radius: 10000,
             x: 0,
             y: 0
         }
