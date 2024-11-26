@@ -16,7 +16,7 @@ class Paricle {
         this.distance = 0;
         this.force = 0;
         this.angle = 0;
-        // this.size = Math.floor(Math.random() * 3);
+        
         this.size = 2.2;
         this.draw();
     }   
